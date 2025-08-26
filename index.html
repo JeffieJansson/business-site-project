@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SelfCare – Enkel Business Site</title>
-    <meta name="description" content="En enkel, responsiv selfcare-sida som uppfyller kurskraven." />
+    <meta
+      name="description"
+      content="En enkel, responsiv selfcare-sida som uppfyller kurskraven."
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,7 +19,12 @@
         <div class="brand">SelfCare</div>
 
         <!-- Hamburger-knapp för mobil -->
-        <button class="menu-toggle" aria-controls="mainmenu" aria-expanded="false" aria-label="Öppna menyn">
+        <button
+          class="menu-toggle"
+          aria-controls="mainmenu"
+          aria-expanded="false"
+          aria-label="Öppna menyn"
+        >
           <span id="burger">☰</span>
         </button>
 
@@ -36,11 +44,14 @@
         <div class="container hero-inner">
           <div class="hero-text">
             <h1>Ta hand om dig – en sak i taget</h1>
-            <p>En enkel plats för rutiner, vila och välmående. Lugn design. Tydlig struktur.</p>
+            <p>
+              En enkel plats för rutiner, vila och välmående. Lugn design.
+              Tydlig struktur.
+            </p>
             <a class="btn" href="#features">Utforska</a>
           </div>
           <div class="hero-media" aria-label="Hero-bild eller video">
-            <img src="images/yoga.jpg" alt="Person gör yoga för välmående" />
+            <img src="yoga.jpg" alt="Person gör yoga för välmående" />
           </div>
         </div>
       </section>
@@ -70,7 +81,10 @@
       <section id="om" class="section">
         <div class="container">
           <h2>Om SelfCare</h2>
-          <p>Den här sidan är medvetet enkel. Den använder Flexbox i header/hero, CSS Grid för korten och har ett formulär enligt kraven.</p>
+          <p>
+            Den här sidan är medvetet enkel. Den använder Flexbox i header/hero,
+            CSS Grid för korten och har ett formulär enligt kraven.
+          </p>
         </div>
       </section>
 
@@ -81,7 +95,13 @@
 
           <!-- G-krav: text, password, radio-set, checkbox-set, submit -->
           <!-- G-krav: POST till httpbin -->
-          <form id="contactForm" class="contact" action="https://httpbin.org/anything" method="POST" novalidate>
+          <form
+            id="contactForm"
+            class="contact"
+            action="https://httpbin.org/anything"
+            method="POST"
+            novalidate
+          >
             <!-- Text input -->
             <label>
               Namn
@@ -91,29 +111,56 @@
             <!-- Password -->
             <label>
               Lösenord
-              <input type="password" name="password" placeholder="Minst 6 tecken" minlength="6" required />
+              <input
+                type="password"
+                name="password"
+                placeholder="Minst 6 tecken"
+                minlength="6"
+                required
+              />
             </label>
 
             <!-- Radio set -->
             <fieldset class="cluster">
               <legend>Vad söker du?</legend>
-              <label><input type="radio" name="type" value="guidance" required /> Vägledning</label>
-              <label><input type="radio" name="type" value="routine" /> Rutiner</label>
-              <label><input type="radio" name="type" value="rest" /> Vila</label>
+              <label
+                ><input type="radio" name="type" value="guidance" required />
+                Vägledning</label
+              >
+              <label
+                ><input type="radio" name="type" value="routine" />
+                Rutiner</label
+              >
+              <label
+                ><input type="radio" name="type" value="rest" /> Vila</label
+              >
             </fieldset>
 
             <!-- Checkbox set -->
             <fieldset class="cluster">
               <legend>Intressen</legend>
-              <label><input type="checkbox" name="interest" value="breathing" /> Andning</label>
-              <label><input type="checkbox" name="interest" value="journaling" /> Journaling</label>
-              <label><input type="checkbox" name="interest" value="movement" /> Rörelse</label>
+              <label
+                ><input type="checkbox" name="interest" value="breathing" />
+                Andning</label
+              >
+              <label
+                ><input type="checkbox" name="interest" value="journaling" />
+                Journaling</label
+              >
+              <label
+                ><input type="checkbox" name="interest" value="movement" />
+                Rörelse</label
+              >
             </fieldset>
 
             <!-- Frivilligt meddelande -->
             <label class="full">
               Meddelande
-              <textarea name="message" rows="4" placeholder="Skriv gärna en rad…"></textarea>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Skriv gärna en rad…"
+              ></textarea>
             </label>
 
             <div class="actions">
